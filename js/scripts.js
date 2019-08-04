@@ -26,4 +26,46 @@ $(document).ready(function () {
 
     $("#submit-custom-pizza").click(function () {
       $("form#custom-pizza").submit(function (event) {
-       
+        event.preventDefault();
+
+        var size = $("select#size").val();
+        var crust = $("select#crust").val();
+        var toppings = $("select#toppings").val();
+        var number = $("select#number").val();
+
+        var newPizzaOrder = new order(size, toppings, number, crust);
+        console.log(newPizzaOrder);
+
+        // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
+      });
+    });
+  });
+
+
+
+
+  // $("#delivery-btn").click(function () {
+  //   $("#address").show();
+  //   $("#pickup-btn,#delivery-btn,#home").hide();
+
+  // var streetAddress = $("input#street-add").val();
+  // var city = $("input#city-add").val();
+  // var newAddress = new Address(streetAddress, city);
+  // $("#order-content").show();
+  // $("#home").hide();
+  // $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
+});
+// $("form#custom-pizza").submit(function (event) {
+
+
+//   var newPizzaOrder = new Order();
+//   newPizzaOrder.pizzaCost();
+//   totalPriceArray.push(newPizzaOrder.pizzaPrice);
+//   $("#pizza-details-dropdown").show();
+//   $("#final-cost").text(newPizzaOrder.finalCost());
+//   $("#pizza-details").append(" " + pizzaDetails + "");
+//   $("#size, #crust, #toppings, #number").val("");
+// });
+// $("#pizza-details-dropdown").click(function () {
+//   $("#pizza-details").toggle();
+// });
