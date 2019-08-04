@@ -24,4 +24,6 @@ $(document).ready(function () {
   $("#pickup-btn").click(function () {
     $("#order-content").show();
 
-    
+    $("#submit-custom-pizza").click(function () {
+      $("form#custom-pizza").submit(function (event) {
+       
