@@ -1,0 +1,13 @@
+
+
+#home {
+  color:black;
+  background-color: #FFFFFF;
+  text-align: center;
+  background-image: url('https://www.kuechengoetter.de/uploads/media/630x630/02/4282-pizza-margherita.jpg?v=1-0');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 40px;
+}
+
