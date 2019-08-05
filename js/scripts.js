@@ -118,19 +118,10 @@ $(document).ready(function () {
 });
 var choice = prompt("enter your location");
 alert("thank you you will receive the pizza at " + choice);
-//   var streetAddress = $("input#street-add").val();
-//   var city = $("input#city-add").val();
-//   var newAddress = new Address(streetAddress, city);
-//   $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
-// });
-// $("form#custom-pizza").submit(function (event) {
 
-//   var newPizzaOrder = new Order();
-//   newPizzaOrder.pizzaCost();
-//   totalPriceArray.push(newPizzaOrder.pizzaPrice);
 //   $("#pizza-details-dropdown").show();
-//   $("#final-cost").text(newPizzaOrder.finalCost());
-//   $("#pizza-details").append(" " + pizzaDetails + "");
+$("#final-cost").text(newPizzaOrder.finalCost());
+$("#pizza-details").append(" " + pizzaDetails + "");
 //   $("#size, #crust, #toppings, #number").val("");
 // });
 // $("#pizza-details-dropdown").click(function () {

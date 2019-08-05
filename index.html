@@ -24,103 +24,107 @@
   <div id="claudine">
     <div id="one">
       <h3>Small</h3>
-      <a href="#order-content"><img src="images/pizza1" height="300px" width="300px"></a>
+      <a href="#custom-pizza"><img src="images/pizza1" height="300px" width="300px"></a>
       <a href="#order-content"><img src="images/pizza2" height="300px" width="300px"></a>
-      <img src="images/pizza3" height="300px" width="300px">
+      <a href="#order-content"><img src="images/pizza3" height="300px" width="300px"></a>
     </div>
     <div id="two">
       <h3>Medium</h3>
-      <img src="images2/img1" height="300px" width="300px">
-      <img src="images2/img2" height="300px" width="300px">
-      <img src="images2/img3" height="300px" width="300px">
+      <a href="#custom-pizza"><img src="images2/img1" height="300px" width="300px"></a>
+      <a href="#custom-pizza"><img src="images2/img2" height="300px" width="300px"></a>
+      <a href="#custom-pizza"><img src="images2/img3" height="300px" width="300px"></a>
     </div>
     <div id="three">
       <h3>Large</h3>
-      <img src="images2/img4" height="300px" width="300px">
-      <img src="images2/img5" height="300px" width="300px">
-      <img src="images2/img6" height="300px" width="300px">
+      <a href="#order-content"><img src="images2/img4" height="300px" width="300px"></a>
+      <a href="#order-content"><img src="images2/img5" height="300px" width="300px"></a>
+      <a href="#order-content"><img src="images2/img6" height="300px" width="300px"></a>
     </div>
   </div>
   <div class="jumbotron" id="order-content">
-    <h1 class="page-header">Order Options</h1>
+    <div id="hello">
 
-    <button type="btn" class="btn btn-primary" id="custom-pizza-btn">Custom Pizza</button>
 
-    <form class="form-group" id="custom-pizza">
-      <div id="form-content">
-        <h3 id="form-header">Custom Form</h3>
-        <div class="row container">
-          <div class="col-xs-6">
-            <p>Size</p>
-          </div>
-          <div class="col-xs-6" class="form-option">
-            <select required class="form-control" id="size">
-              <option></option>
-              <option value="Small">Small</option>
-              <option value="Medium">Medium </option>
-              <option value="Large">Large</option>
-            </select>
-          </div>
-        </div>
+      <h1 class="page-header">Order Options</h1>
 
-        <div class="row container">
-          <div class="col-xs-6">
-            <p>crust</p>
+      <button type="btn" class="btn btn-primary" id="custom-pizza-btn">Custom Pizza</button>
+
+      <form class="form-group" id="custom-pizza">
+        <div id="form-content">
+          <h3 id="form-header">Custom Form</h3>
+          <div class="row container">
+            <div class="col-xs-6">
+              <p>Size</p>
+            </div>
+            <div class="col-xs-6" class="form-option">
+              <select required class="form-control" id="size">
+                <option></option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium </option>
+                <option value="Large">Large</option>
+              </select>
+            </div>
           </div>
-          <div class="col-xs-6" class="form-option">
-            <select required class="form-control" id="crust">
-              <option></option>
-              <option value="Crispy">Crispy</option>
-              <option value="Stuffed">Stuffed</option>
-              <option value="Gluten-free">Gluten-free</option>
-            </select><br>
-          </div>
-        </div>
-        <div class="row container">
-          <div class="col-xs-6">
-            <p>Topping</p>
-          </div>
-          <div class="col-xs-6" class="form-option">
-            <select required class="form-control" id="toppings">
-              <option></option>
-              <option value="Onions">Onions</option>
-              <option value="Green-Peppers">Green-Peppers</option>
-              <option value="Black-Olives">Black-Olives</option>
-              <option value="Spinach">Spinach</option>
-              <option value="Mushrooms">Mushrooms</option>
-              <option value="Chicken">Chicken</option>
-              <option value="Pepperoni">Pepperoni</option>
-              <option value="Canadian-Bacon">Canadian-Bacon</option>
-              <option value="Sausage">Sausage</option>
-            </select>
+
+          <div class="row container">
+            <div class="col-xs-6">
+              <p>crust</p>
+            </div>
+            <div class="col-xs-6" class="form-option">
+              <select required class="form-control" id="crust">
+                <option></option>
+                <option value="Crispy">Crispy</option>
+                <option value="Stuffed">Stuffed</option>
+                <option value="Gluten-free">Gluten-free</option>
+              </select><br>
+            </div>
           </div>
           <div class="row container">
             <div class="col-xs-6">
-              <p>Please selet the number pizza you need!</p>
+              <p>Topping</p>
             </div>
             <div class="col-xs-6" class="form-option">
-              <select id="number" class="form-control" id="number">
+              <select required class="form-control" id="toppings">
                 <option></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-
-              </select><br>
-
+                <option value="Onions">Onions</option>
+                <option value="Green-Peppers">Green-Peppers</option>
+                <option value="Black-Olives">Black-Olives</option>
+                <option value="Spinach">Spinach</option>
+                <option value="Mushrooms">Mushrooms</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Canadian-Bacon">Canadian-Bacon</option>
+                <option value="Sausage">Sausage</option>
+              </select>
             </div>
-          </div>
+            <div class="row container">
+              <div class="col-xs-6">
+                <p>Please selet the number pizza you need!</p>
+              </div>
+              <div class="col-xs-6" class="form-option">
+                <select id="number" class="form-control" id="number">
+                  <option></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
 
+                </select><br>
+
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <button type="submit" id="submit-custom-pizza">Place Order</button>
-    </form>
+        <button type="submit" id="submit-custom-pizza">Place Order</button>
+      </form>
+    </div>
     <button type="btn" id="delivery-btn">Delivery</button>
     <div class="form-group" id="address">
       <h3>Delivery Address</h3>
@@ -149,7 +153,7 @@
   </div>
   <div class="col-xs-4" id="price-content">
     <!-- <h1 class="page-header">delivery</h1> -->
-    <!-- <h2>Price: $ <span id="final-cost"></span></h2> -->
+    <h2>Price: $ <span id="final-cost"></span></h2>
 
     <!-- <button type="btn" id="checkout-btn">Checkout</button>
     <h3><span id="delivery-option"></span></h3> -->
