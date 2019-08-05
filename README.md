@@ -6,4 +6,10 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 *UBUNTU
 *VISIO CODE
 *GOOGLE CHROME
+## Technologies Used
 
+* HTML
+* CSS
+* Bootstrap
+* jQuery
+* JavaScript
