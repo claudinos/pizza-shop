@@ -21,3 +21,7 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 ## CONTACT AND SUPPORT 
 Contact me :claudinos1990@gmail.com
 
+## Links
+
+### License
+Licenced by MIT copyright @ 2019 * claudine umuhire*
