@@ -33,30 +33,24 @@ $(document).ready(function () {
         var toppings = $("select#toppings").val();
         var number = $("select#number").val();
 
-        var newPizzaOrder = new order(size, toppings, number, crust);
+        var newPizzaOrder = new order(size, crust, toppings, number);
         console.log(newPizzaOrder);
 
-        // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
+        $("#delivery-btn").click(function () {
+          $("#address").show();
+          $("#pickup-btn,#delivery-btn,#home").hide();
+          $("#pizza-details").append(" " + pizzaDetails + "");
+        });
       });
     });
   });
 
-
-
-
-  // $("#delivery-btn").click(function () {
-  //   $("#address").show();
-  //   $("#pickup-btn,#delivery-btn,#home").hide();
-
-  // var streetAddress = $("input#street-add").val();
-  // var city = $("input#city-add").val();
-  // var newAddress = new Address(streetAddress, city);
-  // $("#order-content").show();
-  // $("#home").hide();
-  // $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
+  //   var streetAddress = $("input#street-add").val();
+  //   var city = $("input#city-add").val();
+  //   var newAddress = new Address(streetAddress, city);
+  //   $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
 });
 // $("form#custom-pizza").submit(function (event) {
-
 
 //   var newPizzaOrder = new Order();
 //   newPizzaOrder.pizzaCost();
