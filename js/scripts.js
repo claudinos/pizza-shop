@@ -108,7 +108,7 @@ $(document).ready(function () {
 
         // $("#submit-custom-pizza").click(function () {
         //   $("#address").show();
-        $("div#final-cost").append("<p>" + "the total price of pizza is " + totprice + " " + "</p>");
+        $("div#final-cost").append("<p>" + "the total price of pizza is " + " $" + totprice + " " + "</p>");
         // $("#pickup-btn,#delivery-btn,#home").hide();
         // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
       });
@@ -122,7 +122,7 @@ $(document).ready(function () {
     alert("thank you you will receive the pizza at " + choice);
     var deliv = 5;
     var tot = totprice + deliv;
-    $("div#final-cost").append("<p>" + "the total price of pizza and delivery " + tot + " " + "</p>");
+    $("div#final-cost").append("<p>" + "the total price of pizza and delivery " + " $ " + tot + " " + "</p>");
     // alert("thank you you will receive the pizza at " + tot);
     //   $("#pizza-details-dropdown").show();
     // $("#final-cost").text(newPizzaOrder.finalCost());
