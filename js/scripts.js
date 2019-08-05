@@ -9,15 +9,7 @@ order.prototype.pizzaCost = function () {
   return this.customSize + " " + this.crust + " " + this.Topping + " " + this.number
 }
 var totprice;
-// Order.prototype.sideCost = function () {
-//   return this.sidePrice;
-// }
 
-// function Address(streetAddress, city) {
-//   this.streetAddress = streetAddress;
-//   this.city = city;
-//   this.deliveryAddress = (streetAddress + "  " + city);
-// }
 
 $(document).ready(function () {
   $("#pickup-btn").click(function () {
@@ -106,16 +98,14 @@ $(document).ready(function () {
         var price = parseInt(price1) + parseInt(price2) + parseInt(price3);
         totprice = price * number;
 
-        // $("#submit-custom-pizza").click(function () {
-        //   $("#address").show();
+        
         $("div#final-cost").append("<p>" + "the total price of pizza is " + " $" + totprice + " " + "</p>");
-        // $("#pickup-btn,#delivery-btn,#home").hide();
-        // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
+        
       });
     });
   });
 });
-// });
+
 $(document).ready(function () {
   $("#delivery-btn").click(function () {
     var choice = prompt("enter your location");
@@ -123,13 +113,6 @@ $(document).ready(function () {
     var deliv = 5;
     var tot = totprice + deliv;
     $("div#final-cost").append("<p>" + "the total price of pizza and delivery " + " $ " + tot + " " + "</p>");
-    // alert("thank you you will receive the pizza at " + tot);
-    //   $("#pizza-details-dropdown").show();
-    // $("#final-cost").text(newPizzaOrder.finalCost());
-    // $("#pizza-details").append(" " + pizzaDetails + "");
-    // //   $("#size, #crust, #toppings, #number").val("");
-    // });
-    // $("#pizza-details-dropdown").click(function () {
-    //   $("#pizza-details").toggle();
+    
   });
 });

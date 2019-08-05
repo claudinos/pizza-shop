@@ -20,12 +20,7 @@
 #price-content {
   margin-top: 100px;
 }
-/* 
-.page-header {
-  font-size: 65pt;
-  margin-bottom: 75px;
-  padding-bottom: 35px;
-} */
+
 
 #form {
   margin-top: 30px;
@@ -131,9 +126,7 @@ ul {
   margin-bottom: 10px;
 }
 
-/* #cheese-default-size, #pep-default-size, #veggie-default-size {
-  display: none;
-} */
+
 
 .indiv-pizza-default {
   margin-top: 5px;
@@ -141,7 +134,7 @@ ul {
 }
 
 #footer {
-  /* margin-top: 50px; */
+  
   font-size: 30px;
   text-align: center;
 }
