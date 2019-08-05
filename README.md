@@ -18,12 +18,13 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 ## BDD
 
 **Input**
-*make your order
-*promt your location in deliver adress button
-*submit your order
+
+* make your order
+* promt your location in deliver adress button
+* submit your order
 **Output**
-*the total amount of pizza
-*the total amount of pizza plus cost of delivery
+* the total amount of pizza
+* the total amount of pizza plus cost of delivery
 
 
 
