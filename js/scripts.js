@@ -28,7 +28,23 @@ $(document).ready(function () {
       $("form#custom-pizza").submit(function (event) {
         event.preventDefault();
 
-        
+        var size = $("select#size").val();
+        if (size === "Small") {
+          var price1 = 10
+          console.log(price1);
+        } else if (size === "Medium") {
+          var price1 = 12
+          console.log(price1);
+        } else if (size === "Large") {
+          var price1 = 13
+          console.log(price1);
+        } else {
+          alert("please fill!")
+        }
+
+
+
+      
         $("#delivery-btn").click(function () {
           $("#address").show();
           $("#final-cost").append($("h2"));
