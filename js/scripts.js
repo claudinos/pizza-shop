@@ -44,7 +44,68 @@ $(document).ready(function () {
 
 
 
-      
+        var crust = $("select#crust").val();
+        if (crust === "Crispy") {
+          var price2 = 3
+          console.log(price2);
+
+        }
+        else if (crust === "Stuffed") {
+          var price2 = 4
+          console.log(price2);
+        }
+        else if (crust === "Gluten - free") {
+          var price2 = 3
+          console.log(price2);
+        }
+        else {
+          console.log(price2);
+        }
+        var toppings = $("select#toppings").val();
+        if (toppings === "Onions") {
+          var price3 = 1
+          console.log(price3)
+        }
+        else if (toppings === "Green-Peppers") {
+          var price3 = 2
+          console.log(price3)
+        }
+        else if (toppings === "Black-Olives") {
+          var price3 = 3
+          console.log(price3)
+        }
+        else if (toppings === "Spinach") {
+          var price3 = 3
+          console.log(price3)
+
+        }
+        else if (toppings === "Mushrooms") {
+          var price3 = 2
+          console.log(price3)
+        }
+        else if (toppings === "Chicken") {
+          var price3 = 4
+          console.log(price3)
+        }
+        else if (toppings === "Pepperoni") {
+          var price3 = 2
+          console.log(price3)
+        }
+        else if (toppings === "Canadian-Bacon") {
+          var price3 = 5
+          console.log(price3)
+
+        }
+        else {
+          console.log(price3)
+        }
+        var number = $("select#number").val();
+
+        var newPizzaOrder = new order(size, crust, toppings, number);
+        console.log(newPizzaOrder);
+        var price = parseInt(price1) + parseInt(price2) + parseInt(price3)
+        var totprice = price * number
+
         $("#delivery-btn").click(function () {
           $("#address").show();
           $("#final-cost").append($("h2"));
