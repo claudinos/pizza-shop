@@ -22,6 +22,7 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 * make your order
 * promt your location in deliver adress button
 * submit your order
+
 **Output**
 
 * the total amount of pizza
