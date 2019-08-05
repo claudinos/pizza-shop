@@ -22,34 +22,30 @@ order.prototype.pizzaCost = function () {
 
 $(document).ready(function () {
   $("#pickup-btn").click(function () {
-    $("#order-content").show();
+    $("#claudine").show();
 
     $("#submit-custom-pizza").click(function () {
       $("form#custom-pizza").submit(function (event) {
         event.preventDefault();
 
-        var size = $("select#size").val();
-        var crust = $("select#crust").val();
-        var toppings = $("select#toppings").val();
-        var number = $("select#number").val();
-
-        var newPizzaOrder = new order(size, crust, toppings, number);
-        console.log(newPizzaOrder);
-
+        
         $("#delivery-btn").click(function () {
           $("#address").show();
-          $("#pickup-btn,#delivery-btn,#home").hide();
-          $("#pizza-details").append(" " + pizzaDetails + "");
+          $("#final-cost").append($("h2"));
+          // $("#pickup-btn,#delivery-btn,#home").hide();
+          // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
         });
       });
     });
   });
-
-  //   var streetAddress = $("input#street-add").val();
-  //   var city = $("input#city-add").val();
-  //   var newAddress = new Address(streetAddress, city);
-  //   $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
 });
+var choice = prompt("enter your location");
+alert("thank you you will receive the pizza at " + choice);
+//   var streetAddress = $("input#street-add").val();
+//   var city = $("input#city-add").val();
+//   var newAddress = new Address(streetAddress, city);
+//   $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
+// });
 // $("form#custom-pizza").submit(function (event) {
 
 //   var newPizzaOrder = new Order();

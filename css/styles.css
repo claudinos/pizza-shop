@@ -82,9 +82,10 @@
 
 
 #form-header {
-  color: #FFFFFF;
+  color:black;
   font-size: 20pt;
   margin-bottom: 35px;
+
 }
 
 #form-content {
@@ -142,7 +143,18 @@ ul {
 }
 
 #footer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   font-size: 30px;
   text-align: center;
 }
+
+#one{
+text-align: center;
+}
+#two{
+  text-align: center;
+  }
+#three{
+    text-align: center;
+  }
+    
