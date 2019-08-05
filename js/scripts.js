@@ -8,7 +8,7 @@ function order(size, toppings, crust, number) {
 order.prototype.pizzaCost = function () {
   return this.customSize + " " + this.crust + " " + this.Topping + " " + this.number
 }
-
+var totprice;
 // Order.prototype.sideCost = function () {
 //   return this.sidePrice;
 // }
@@ -104,7 +104,7 @@ $(document).ready(function () {
         var newPizzaOrder = new order(size, crust, toppings, number);
         console.log(newPizzaOrder);
         var price = parseInt(price1) + parseInt(price2) + parseInt(price3);
-        var totprice = price * number;
+        totprice = price * number;
 
         // $("#submit-custom-pizza").click(function () {
         //   $("#address").show();
@@ -116,15 +116,20 @@ $(document).ready(function () {
   });
 });
 // });
-// $("#delivery-btn").click(function () {
-//   var choice = prompt("enter your location");
-//   alert("thank you you will receive the pizza at " + choice);
-
-  //   $("#pizza-details-dropdown").show();
-  // $("#final-cost").text(newPizzaOrder.finalCost());
-  // $("#pizza-details").append(" " + pizzaDetails + "");
-  // //   $("#size, #crust, #toppings, #number").val("");
-  // });
-  // $("#pizza-details-dropdown").click(function () {
-  //   $("#pizza-details").toggle();
-// });
+$(document).ready(function () {
+  $("#delivery-btn").click(function () {
+    var choice = prompt("enter your location");
+    alert("thank you you will receive the pizza at " + choice);
+    var deliv = 5;
+    var tot = totprice + deliv;
+    $("div#final-cost").append("<p>" + "the total price of pizza and delivery " + tot + " " + "</p>");
+    // alert("thank you you will receive the pizza at " + tot);
+    //   $("#pizza-details-dropdown").show();
+    // $("#final-cost").text(newPizzaOrder.finalCost());
+    // $("#pizza-details").append(" " + pizzaDetails + "");
+    // //   $("#size, #crust, #toppings, #number").val("");
+    // });
+    // $("#pizza-details-dropdown").click(function () {
+    //   $("#pizza-details").toggle();
+  });
+});
