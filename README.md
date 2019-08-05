@@ -3,9 +3,10 @@
 ## Description
 This Webpage allow a user to create a custom pizza and shows the total of their order 
 ## Setup/Installation Requirements
-*UBUNTU
-*VISIO CODE
-*GOOGLE CHROME
+
+    *UBUNTU
+    *VISIO CODE
+    *GOOGLE CHROME
 ## Technologies Used
 
 * HTML
@@ -22,6 +23,6 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 Contact me :claudinos1990@gmail.com
 
 ## Links
-
+ my project link:https://claudinos.github.io/pizza-shop/
 ### License
 Licenced by MIT copyright @ 2019 * claudine umuhire*
