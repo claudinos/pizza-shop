@@ -34,8 +34,6 @@ $(document).ready(function () {
           alert("please fill!")
         }
 
-
-
         var crust = $("select#crust").val();
         if (crust === "Crispy") {
           var price2 = 3;
