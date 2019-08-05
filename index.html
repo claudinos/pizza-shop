@@ -5,7 +5,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
 
   <title>Pizza Order</title>
@@ -126,37 +126,11 @@
       </form>
     </div>
     <button type="btn" id="delivery-btn">Delivery</button>
-    <div class="form-group" id="address">
-      <h3>Delivery Address</h3>
 
-      <form id="form">
-        <div class="row">
-          <div class="col-xs-6">
-            <label for="first-name">First Name</label><input required type="text"><br>
-          </div>
-          <div class="col-xs-6">
-            <label for="last-name">Last Name</label><input required type="text">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <label for="street-address">Address</label><input required type="text" id="street-add"><br>
-          </div>
-          <div class="col-xs-6">
-            <label for="city-name">City</label><input required type="text">
-          </div>
-
-        </div>
-        <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
-      </form>
+    <div id="final-cost">
+      <p></p>
     </div>
-  </div>
-  <div class="col-xs-4" id="price-content">
-    <!-- <h1 class="page-header">delivery</h1> -->
-    <h2>Price: $ <span id="final-cost"></span></h2>
 
-    <!-- <button type="btn" id="checkout-btn">Checkout</button>
-    <h3><span id="delivery-option"></span></h3> -->
   </div>
 
   </div>

@@ -1,4 +1,3 @@
-
 var totalPriceArray = [];
 function order(size, toppings, crust, number) {
   this.customSize = size;
@@ -25,18 +24,19 @@ $(document).ready(function () {
     $("#claudine").show();
 
     $("#submit-custom-pizza").click(function () {
+
       $("form#custom-pizza").submit(function (event) {
         event.preventDefault();
 
         var size = $("select#size").val();
         if (size === "Small") {
-          var price1 = 10
+          var price1 = 10;
           console.log(price1);
         } else if (size === "Medium") {
-          var price1 = 12
+          var price1 = 12;
           console.log(price1);
         } else if (size === "Large") {
-          var price1 = 13
+          var price1 = 13;
           console.log(price1);
         } else {
           alert("please fill!")
@@ -46,16 +46,16 @@ $(document).ready(function () {
 
         var crust = $("select#crust").val();
         if (crust === "Crispy") {
-          var price2 = 3
+          var price2 = 3;
           console.log(price2);
 
         }
         else if (crust === "Stuffed") {
-          var price2 = 4
+          var price2 = 4;
           console.log(price2);
         }
         else if (crust === "Gluten - free") {
-          var price2 = 3
+          var price2 = 3;
           console.log(price2);
         }
         else {
@@ -63,67 +63,68 @@ $(document).ready(function () {
         }
         var toppings = $("select#toppings").val();
         if (toppings === "Onions") {
-          var price3 = 1
+          var price3 = 1;
           console.log(price3)
         }
         else if (toppings === "Green-Peppers") {
-          var price3 = 2
-          console.log(price3)
+          var price3 = 2;
+          console.log(price3);
         }
         else if (toppings === "Black-Olives") {
-          var price3 = 3
-          console.log(price3)
+          var price3 = 3;
+          console.log(price3);
         }
         else if (toppings === "Spinach") {
-          var price3 = 3
-          console.log(price3)
+          var price3 = 3;
+          console.log(price3);
 
         }
         else if (toppings === "Mushrooms") {
-          var price3 = 2
+          var price3 = 2;
           console.log(price3)
         }
         else if (toppings === "Chicken") {
-          var price3 = 4
-          console.log(price3)
+          var price3 = 4;
+          console.log(price3);
         }
         else if (toppings === "Pepperoni") {
-          var price3 = 2
-          console.log(price3)
+          var price3 = 2;
+          console.log(price3);
         }
         else if (toppings === "Canadian-Bacon") {
-          var price3 = 5
-          console.log(price3)
+          var price3 = 5;
+          console.log(price3);
 
         }
         else {
-          console.log(price3)
+          console.log(price3);
         }
         var number = $("select#number").val();
 
         var newPizzaOrder = new order(size, crust, toppings, number);
         console.log(newPizzaOrder);
-        var price = parseInt(price1) + parseInt(price2) + parseInt(price3)
-        var totprice = price * number
+        var price = parseInt(price1) + parseInt(price2) + parseInt(price3);
+        var totprice = price * number;
 
-        $("#delivery-btn").click(function () {
-          $("#address").show();
-          $("#final-cost").append($("h2"));
-          // $("#pickup-btn,#delivery-btn,#home").hide();
-          // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
-        });
+        // $("#submit-custom-pizza").click(function () {
+        //   $("#address").show();
+        $("div#final-cost").append("<p>" + "the total price of pizza is " + totprice + " " + "</p>");
+        // $("#pickup-btn,#delivery-btn,#home").hide();
+        // $("ul#contacts").append("<li><span class='contact'>" + newPizzaOrder.pizzaCost + "</span></li>");
       });
     });
   });
 });
-var choice = prompt("enter your location");
-alert("thank you you will receive the pizza at " + choice);
-
-//   $("#pizza-details-dropdown").show();
-$("#final-cost").text(newPizzaOrder.finalCost());
-$("#pizza-details").append(" " + pizzaDetails + "");
-//   $("#size, #crust, #toppings, #number").val("");
 // });
-// $("#pizza-details-dropdown").click(function () {
-//   $("#pizza-details").toggle();
+// $("#delivery-btn").click(function () {
+//   var choice = prompt("enter your location");
+//   alert("thank you you will receive the pizza at " + choice);
+
+  //   $("#pizza-details-dropdown").show();
+  // $("#final-cost").text(newPizzaOrder.finalCost());
+  // $("#pizza-details").append(" " + pizzaDetails + "");
+  // //   $("#size, #crust, #toppings, #number").val("");
+  // });
+  // $("#pizza-details-dropdown").click(function () {
+  //   $("#pizza-details").toggle();
 // });
