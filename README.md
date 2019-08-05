@@ -13,3 +13,11 @@ This Webpage allow a user to create a custom pizza and shows the total of their 
 * Bootstrap
 * jQuery
 * JavaScript
+
+## BDD
+
+
+
+## CONTACT AND SUPPORT 
+Contact me :claudinos1990@gmail.com
+
